@@ -1,32 +1,256 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#00a7c7">
+  <meta name="description" content="Glow & Go Travel: personal holidays, cruises and unforgettable escapes planned by Becky, your independent travel advisor in Kettering.">
+  <title>Glow & Go Travel | Escape Ordinary. Embrace Freedom.</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="top-strip">Your next great escape starts with a conversation ✦ <a href="#/book">Let's plan it together ↗</a></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#/home" aria-label="Glow and Go Travel home">
+        <span class="brand-icon" aria-hidden="true">g<span>✦</span></span>
+        <span><strong>Glow &amp; Go</strong><small>TRAVEL BY BECKY</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">☰</button>
+      <nav id="site-nav" class="nav" aria-label="Main navigation">
+        <a href="#/home">Home</a>
+        <a href="#/about">About Becky</a>
+        <a href="#/why-book">Why Becky?</a>
+        <a href="#/destinations">Gallery</a>
+        <a href="#/journal">Travel Journal</a>
+        <a href="#/stories">Client Stories</a>
+        <a href="#/reviews">Reviews</a>
+        <a href="#/contact">Contact</a>
+        <a href="#/book" class="nav-book">Plan my escape ↗</a>
+      </nav>
+    </div>
+  </header>
 
-    <header>
-        <h1>My Website</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+  <main id="main-content">
+    <!-- HOME -->
+    <section class="page" data-page="home">
+      <div class="home-hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <span class="eyebrow">Independent travel planning · Kettering, UK</span>
+            <h1>Escape ordinary.<br><em>Embrace freedom.</em></h1>
+            <p>Life's too short for ordinary holidays. I'm Becky, and I bring your dream escapes to life — from sun-soaked beaches to bucket-list adventures, with every detail planned around <strong>you.</strong></p>
+            <div class="actions"><a class="btn btn-primary" href="#/book">Let's plan your escape ↗</a><a class="link-arrow" href="#/about">Meet Becky →</a></div>
+            <p class="hero-note">✦ Real people. Real holidays. Beautiful memories.</p>
+          </div>
+          <div class="hero-visual">
+            <img src="beach-cove.jpg" alt="Turquoise sea and golden beach framed by greenery" fetchpriority="high">
+            <span class="round-sticker">Made for<br>your kind<br>of magic ✧</span>
+            <div class="floating-note"><span>✺</span><strong>Where to next?</strong><small>One little conversation could take you somewhere wonderful.</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="values-strip"><div class="container">✦ Holidays made personal <span>✦</span> Advice from a real person <span>✦</span> Memories that last</div></div>
+      <section class="section"><div class="container split">
+        <div class="portrait-wrap"><img src="becky-coast-portrait.jpg" loading="lazy" alt="Becky smiling on holiday by the sea"><span class="handwritten">Hello, I'm Becky! ♡</span></div>
+        <div><span class="eyebrow">The person behind the planning</span><h2>Dream holidays. <em>A personal touch.</em></h2>
+          <p class="lead">I'm Becky, and I love being part of people's dream trips and helping them escape normal life.</p>
+          <p>Whether you're a family planning your next adventure, a couple looking for luxury, honeymooners starting a new chapter, or someone ready to explore the world, I'm here to listen and create something perfect for you.</p>
+          <a href="#/about" class="btn btn-outline">A little more about me ↗</a>
+        </div>
+      </div></section>
+      <section class="section pale"><div class="container">
+        <div class="section-heading"><div><span class="eyebrow">Why book with Becky?</span><h2>Big dreams.<br><em>Thoughtful details.</em></h2></div><p>You're not just another booking reference. You deserve someone who really gets what your perfect holiday looks like.</p></div>
+        <div class="three-cols">
+          <article class="info-card"><span class="card-number">01</span><h3>I listen first</h3><p>Your priorities, your wish list and the things that really matter — we'll start with you.</p></article>
+          <article class="info-card"><span class="card-number">02</span><h3>I do the research</h3><p>Package holidays, cruises, luxury getaways and bespoke adventures, all carefully considered.</p></article>
+          <article class="info-card"><span class="card-number">03</span><h3>I'm here for you</h3><p>A friendly, familiar person to speak to when you've got questions or need guidance.</p></article>
+        </div><div class="centre top-space"><a class="link-arrow" href="#/why-book">See all the reasons to book with me →</a></div>
+      </div></section>
+      <section class="section"><div class="container"><div class="section-heading"><div><span class="eyebrow">A world worth seeing</span><h2>Some places just <em>stay with you.</em></h2></div><a class="link-arrow" href="#/destinations">Explore the gallery →</a></div>
+        <div class="mosaic">
+          <button type="button" class="photo" data-image="canada-lake.jpg" data-caption="Canada — incredible mountain scenery"><img src="canada-lake.jpg" loading="lazy" alt="Turquoise Canadian mountain lake"><span>The great outdoors ↗</span></button>
+          <button type="button" class="photo" data-image="dolphins-sunset.jpg" data-caption="Dolphins at sunset"><img src="dolphins-sunset.jpg" loading="lazy" alt="Dolphins swimming as the sun sets"><span>Golden hour magic ↗</span></button>
+          <button type="button" class="photo" data-image="norway-village.jpg" data-caption="Colourful houses along a Norwegian fjord"><img src="norway-village.jpg" loading="lazy" alt="Norwegian fjord and colourful houses"><span>Picture-perfect moments ↗</span></button>
+          <button type="button" class="photo" data-image="becky-sunset.jpg" data-caption="Becky enjoying a sunset by the sea"><img src="becky-sunset.jpg" loading="lazy" alt="Becky making a heart shape with her hands around the setting sun"><span>Chasing the sunshine ↗</span></button>
+        </div>
+      </div></section>
+      <section class="section quote-band"><div class="container centre">
+        <span class="eyebrow">Kind words, happy travellers</span><h2>Nothing beats hearing<br><em>you had an amazing time.</em></h2>
+        <div class="quote-slider"><p id="slider-quote">“Becky was an absolute superstar!”</p><span id="slider-by">— Gemma · Canada</span><div class="slider-buttons"><button type="button" id="review-prev" aria-label="Previous review">←</button><button type="button" id="review-next" aria-label="Next review">→</button></div></div>
+        <a class="link-arrow" href="#/reviews">Read more lovely reviews →</a>
+      </div></section>
+      <section class="section"><div class="container"><div class="section-heading"><div><span class="eyebrow">Travel inspiration</span><h2>Stories, sunshine &amp;<br><em>a little wanderlust.</em></h2></div><p>Beautiful places, travel ideas and real stories to inspire your next adventure.</p></div>
+        <div class="three-cols">
+          <a href="#/journal" class="story-card"><img src="beach-cove.jpg" loading="lazy" alt="A sunny beach cove"><div><small>BECKY'S FAVOURITE</small><h3>Sardinia has my heart</h3><p>A little inspiration from Becky's favourite destination.</p><b>Explore the journal →</b></div></a>
+          <a href="#/stories" class="story-card"><img src="norway-fjord-cabin.jpg" loading="lazy" alt="Norwegian lakeside cabin"><div><small>REAL CLIENT STORIES</small><h3>Adventures worth sharing</h3><p>Find out where Glow &amp; Go travellers have been.</p><b>Read their stories →</b></div></a>
+          <a href="#/journal" class="story-card"><img src="becky-kayaking.jpg" loading="lazy" alt="Becky smiling by kayaks"><div><small>GO SOMEWHERE NEW</small><h3>The world is waiting</h3><p>Beaches, mountain escapes, cruises and more.</p><b>Get inspired →</b></div></a>
+        </div>
+      </div></section>
+      <section class="section pale"><div class="container"><div class="section-heading"><div><span class="eyebrow">Your holiday starts here</span><h2>Tell me what you're <em>dreaming of.</em></h2></div><p>Just a few details — your email app will open with your enquiry ready for you to send to Becky.</p></div>
+        <div class="home-form"><div class="form-card"><form class="enquiry-form">
+          <div class="form-grid">
+            <label>Your name <input name="name" autocomplete="name" required placeholder="Your name"></label>
+            <label>Your email <input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+            <label>Where would you love to go? <input name="destination" required placeholder="Anywhere in mind?"></label>
+            <label>When would you like to travel? <input name="dates" placeholder="Dates or flexible"></label>
+            <label>Who's coming? <input name="travellers" placeholder="e.g. 2 adults, 2 children"></label>
+            <label>Approximate budget <input name="budget" placeholder="Optional"></label>
+            <label class="wide">Anything else I should know? <textarea name="message" rows="3" placeholder="Tell me about your dream holiday..."></textarea></label>
+          </div><button class="btn btn-primary" type="submit">Prepare my enquiry ↗</button><p class="form-status" aria-live="polite"></p>
+          <p class="form-help">Your email app opens with the details filled in. You'll need to press Send to contact Becky. This is an enquiry, not a confirmed booking.</p>
+        </form></div></div>
+      </div></section>
+    </section>
 
-    <main>
-        <h2>Welcome to My Website!</h2>
-        <p>This is my very first simple website.</p>
-        <button>Learn More</button>
-    </main>
+    <!-- ABOUT -->
+    <section class="page" data-page="about" hidden>
+      <div class="page-banner"><div class="container"><span class="eyebrow">Nice to meet you</span><h1>Hi, I'm <em>Becky!</em></h1><p>Independent travel planning, personal recommendations, and a genuine love of helping you see the world.</p></div></div>
+      <section class="section"><div class="container split"><div class="portrait-wrap"><img src="becky-red-outfit.jpg" loading="lazy" alt="Becky smiling in a red outfit"></div><div><span class="eyebrow">My story</span><h2>It's all about <em>your holiday.</em></h2><p class="lead">I'm Becky, and I love being part of people's dream trips and helping them escape normal life.</p><p>Whether you're a family planning your next adventure, a couple seeking luxury and relaxation, honeymooners starting your journey together, or someone ready to explore the world — I'm here to listen and create something perfect for you.</p><p>From package deals to luxury holidays, cruises to bespoke long-haul tours — I book it all. What makes me different? I'm a listener. I pick up on everything you want and suggest things you haven't thought of. I take time to research the best options and build real relationships with my clients.</p><p>I work independently with the backing of Azure Travel. For the precise booking terms and financial protection on any holiday, I'll explain the details when we discuss your options.</p><p><strong>Favourite place?</strong> Sardinia. 💙</p><a href="#/book" class="btn btn-primary">Let's plan your escape ↗</a></div></div></section>
+      <section class="section pale"><div class="container"><div class="section-heading"><div><span class="eyebrow">A little glimpse</span><h2>The person behind <em>Glow &amp; Go.</em></h2></div><p>Real photos, real adventures, and the excitement I love sharing with my clients.</p></div><div class="four-cols">
+        <img class="rounded-img" src="becky-sunset.jpg" alt="Becky enjoying sunset" loading="lazy"><img class="rounded-img" src="becky-kayaking.jpg" alt="Becky enjoying an outdoor adventure" loading="lazy"><img class="rounded-img" src="becky-travel-friends.jpg" alt="Becky and fellow travellers" loading="lazy"><img class="rounded-img" src="becky-coast-portrait.jpg" alt="Becky by the sea" loading="lazy">
+      </div></div></section>
+    </section>
 
-    <footer>
-        <p>© 2026 My Website</p>
-    </footer>
+    <!-- WHY -->
+    <section class="page" data-page="why-book" hidden>
+      <div class="page-banner"><div class="container"><span class="eyebrow">Why book with me?</span><h1>It's personal.<br><em>And that's the point.</em></h1><p>Beautiful holidays aren't just about where you go. They're about getting the right experience for you.</p></div></div>
+      <section class="section"><div class="container three-cols">
+        <article class="info-card"><span class="card-number">01</span><h3>A real person</h3><p>Talk to Becky, not an anonymous booking engine. Your plans begin with a proper conversation.</p></article>
+        <article class="info-card"><span class="card-number">02</span><h3>Tailored to you</h3><p>Whether it's a relaxed family escape or a once-in-a-lifetime adventure, the details matter.</p></article>
+        <article class="info-card"><span class="card-number">03</span><h3>Research and care</h3><p>I'll take time to compare options, listen to your priorities and recommend what fits.</p></article>
+        <article class="info-card"><span class="card-number">04</span><h3>Choices galore</h3><p>From package deals and cruises to luxury resorts and bespoke long-haul itineraries.</p></article>
+        <article class="info-card"><span class="card-number">05</span><h3>Friendly guidance</h3><p>A familiar person to answer questions and help you feel confident about your plans.</p></article>
+        <article class="info-card"><span class="card-number">06</span><h3>Professional support</h3><p>Independent, personal service backed by Azure Travel. Details of protection depend on the booking.</p></article>
+      </div></section>
+      <section class="section pale"><div class="container split"><div><span class="eyebrow">How it works</span><h2>From big idea to <em>boarding pass.</em></h2><ol class="steps"><li><strong>Tell me your ideas</strong><p>Where, when, who's coming and what you'd love from your time away.</p></li><li><strong>I'll explore the options</strong><p>I research holidays that suit your needs and budget.</p></li><li><strong>Find your favourite</strong><p>We'll talk through the possibilities and next steps before you book.</p></li></ol><a href="#/book" class="btn btn-primary">Start planning ↗</a></div><img class="rounded-feature" src="becky-sunset.jpg" alt="Becky making a heart around the sun" loading="lazy"></div></section>
+    </section>
 
+    <!-- GALLERY -->
+    <section class="page" data-page="destinations" hidden>
+      <div class="page-banner"><div class="container"><span class="eyebrow">The travel gallery</span><h1>Postcards from <em>paradise.</em></h1><p>Landscapes, special moments and glimpses of the places that inspire us. Click any image to see it larger.</p></div></div>
+      <section class="section"><div class="container">
+        <div class="filter-bar" role="group" aria-label="Filter photos"><button type="button" data-filter="all" aria-pressed="true">All photos</button><button type="button" data-filter="coast" aria-pressed="false">Sun &amp; sea</button><button type="button" data-filter="nature" aria-pressed="false">Nature &amp; adventure</button><button type="button" data-filter="people" aria-pressed="false">Becky's moments</button></div>
+        <div class="gallery-grid">
+          <button class="gallery-card tall" data-category="coast" data-image="beach-cove.jpg" data-caption="A beautiful beach cove"><img src="beach-cove.jpg" alt="Golden beach cove and blue sea" loading="lazy"><span>A sunny escape ↗</span></button>
+          <button class="gallery-card" data-category="nature" data-image="canada-lake.jpg" data-caption="Canada — lake and mountain scenery"><img src="canada-lake.jpg" alt="Mountain lake in Canada" loading="lazy"><span>Canada's wild beauty ↗</span></button>
+          <button class="gallery-card" data-category="people" data-image="becky-sunset.jpg" data-caption="Becky enjoying the sunset"><img src="becky-sunset.jpg" alt="Becky making a heart at sunset" loading="lazy"><span>Sunset magic ↗</span></button>
+          <button class="gallery-card" data-category="nature" data-image="norway-village.jpg" data-caption="Houses beside a Norwegian fjord"><img src="norway-village.jpg" alt="Norwegian lakeside village" loading="lazy"><span>Norwegian reflections ↗</span></button>
+          <button class="gallery-card" data-category="coast" data-image="dolphins-sunset.jpg" data-caption="Dolphins swimming at sunset"><img src="dolphins-sunset.jpg" alt="Dolphins at sunset" loading="lazy"><span>Dolphins at sunset ↗</span></button>
+          <button class="gallery-card" data-category="people" data-image="becky-kayaking.jpg" data-caption="Becky ready for kayaking"><img src="becky-kayaking.jpg" alt="Becky sitting by kayaks" loading="lazy"><span>A little adventure ↗</span></button>
+          <button class="gallery-card" data-category="nature" data-image="canada-rapids.jpg" data-caption="Canadian river rapids"><img src="canada-rapids.jpg" alt="Rapids flowing through a forest" loading="lazy"><span>Into the great outdoors ↗</span></button>
+          <button class="gallery-card" data-category="nature" data-image="norway-lake.jpg" data-caption="Mirror-like Norwegian mountain lake"><img src="norway-lake.jpg" alt="Mountains mirrored in a Norwegian lake" loading="lazy"><span>Still waters ↗</span></button>
+          <button class="gallery-card" data-category="coast" data-image="waterfront-night.jpg" data-caption="Night-time waterside view"><img src="waterfront-night.jpg" alt="Waterfront lit up at night" loading="lazy"><span>After dark ↗</span></button>
+          <button class="gallery-card" data-category="people" data-image="becky-red-outfit.jpg" data-caption="Becky ready for another adventure"><img src="becky-red-outfit.jpg" alt="Becky wearing a red outfit" loading="lazy"><span>Meet Becky ↗</span></button>
+          <button class="gallery-card" data-category="nature" data-image="norway-fjord-cabin.jpg" data-caption="Cabin by a fjord in Norway"><img src="norway-fjord-cabin.jpg" alt="Person by red cabin and Norwegian fjord" loading="lazy"><span>Fjord-side adventures ↗</span></button>
+          <button class="gallery-card" data-category="coast" data-image="gran-canaria-resort.jpg" data-caption="Gran Canaria resort"><img src="gran-canaria-resort.jpg" alt="Resort swimming pool and palms" loading="lazy"><span>Poolside perfection ↗</span></button>
+          <button class="gallery-card" data-category="people" data-image="becky-holiday-friends.jpg" data-caption="Holiday friends"><img src="becky-holiday-friends.jpg" alt="Two friends at a holiday venue" loading="lazy"><span>Holiday memories ↗</span></button>
+          <button class="gallery-card" data-category="nature" data-image="norway-sunlight.jpg" data-caption="Sunshine over Norwegian water"><img src="norway-sunlight.jpg" alt="Sunlit lake through trees" loading="lazy"><span>Sunshine on the water ↗</span></button>
+          <button class="gallery-card" data-category="people" data-image="becky-travel-friends.jpg" data-caption="Friends travelling together"><img src="becky-travel-friends.jpg" alt="Group of friends in a hotel lobby" loading="lazy"><span>Better together ↗</span></button>
+          <button class="gallery-card" data-category="coast" data-image="beach-just-booked.jpg" data-caption="Just booked — holiday announcement"><img src="beach-just-booked.jpg" alt="Cruise holiday booking graphic" loading="lazy"><span>Just booked! ↗</span></button>
+          <button class="gallery-card" data-category="people" data-image="becky-coast-portrait.jpg" data-caption="Becky by the sea"><img src="becky-coast-portrait.jpg" alt="Becky smiling by the coast" loading="lazy"><span>Hello from Becky ↗</span></button>
+        </div><p class="fineprint">Photos are shared for inspiration; individual client and destination associations should be confirmed with Becky before public launch.</p>
+      </div></section>
+    </section>
+
+    <!-- JOURNAL -->
+    <section class="page" data-page="journal" hidden>
+      <div class="page-banner"><div class="container"><span class="eyebrow">Becky's travel journal</span><h1>Wonderful places.<br><em>Wonderful stories.</em></h1><p>Travel inspiration and destination ideas, with space for Becky's own trip-by-trip diaries as they're added.</p></div></div>
+      <section class="section"><div class="container"><div class="featured-article"><img src="beach-cove.jpg" alt="Beautiful turquoise sea" loading="lazy"><div><span class="eyebrow">Favourite destination</span><h2>A little love for <em>Sardinia.</em></h2><p>Sardinia is Becky's favourite place. Think sparkling blue water, beautiful coastlines and the chance to slow down and enjoy every moment. Whether you're dreaming of a romantic escape or a relaxing beach break, it's a wonderful destination to explore.</p><p class="fineprint">Destination introduction based on Becky's stated favourite; her full personal diary can be added here later.</p><a href="#/book" class="link-arrow">Ask Becky about Sardinia →</a></div></div>
+      <div class="section-heading space-above"><div><span class="eyebrow">A little inspiration</span><h2>Where will you <em>go next?</em></h2></div></div><div class="three-cols">
+        <article class="story-card static"><img src="norway-lake.jpg" alt="Norwegian mountains mirrored in lake" loading="lazy"><div><small>NATURE &amp; ADVENTURE</small><h3>Norway's extraordinary scenery</h3><p>Fjords, mountain lakes, bright summer days and scenery worth slowing down for.</p></div></article>
+        <article class="story-card static"><img src="canada-rapids.jpg" alt="Rushing Canadian river" loading="lazy"><div><small>BUCKET-LIST TRAVEL</small><h3>Canada, in all its glory</h3><p>Incredible landscapes and adventures that make lifelong memories.</p></div></article>
+        <article class="story-card static"><img src="dolphins-sunset.jpg" alt="Dolphins swimming at sunset" loading="lazy"><div><small>SUNSHINE &amp; SEA</small><h3>Moments worth travelling for</h3><p>Those unforgettable sunsets and little surprises that stay with you.</p></div></article>
+      </div></div></section>
+    </section>
+
+    <!-- CLIENT STORIES -->
+    <section class="page" data-page="stories" hidden>
+      <div class="page-banner"><div class="container"><span class="eyebrow">Client travel stories</span><h1>Real escapes.<br><em>Real experiences.</em></h1><p>Stories and memories shared by Glow &amp; Go travellers, with first names only.</p></div></div>
+      <section class="section"><div class="container"><div class="featured-article"><img src="beach-cove.jpg" alt="A beautiful sandy beach, illustrative holiday scenery" loading="lazy"><div><span class="eyebrow">A holiday story from Lizzie</span><h2>A relaxing week in <em>Palma Nova.</em></h2><p>Lizzie enjoyed a relaxing stay at Globales Panama in Palma Nova. She praised the comfortable room, welcoming staff, cleanliness, warm pool and varied all-inclusive food. There was entertainment available, but no pressure to join in.</p><p>The beach was a short walk away, with clear, warm water and thoughtful accessibility features including a walkway to the sea and lifeguard support for people with mobility needs.</p><blockquote class="story-quote">“I would definitely recommend this hotel and area to anyone looking for a relaxing holiday in the sun.”</blockquote><p class="fineprint">Lizzie's experience, condensed from her submitted account. The photo is illustrative, not confirmed as her hotel.</p></div></div>
+        <div class="section-heading space-above"><div><span class="eyebrow">More happy travels</span><h2>Adventures <em>worth sharing.</em></h2></div></div>
+        <div class="two-cols">
+          <article class="story-card static"><img src="norway-fjord-cabin.jpg" alt="Norwegian fjord scene" loading="lazy"><div><small>JULIE · NORWEGIAN FJORDS</small><h3>Twelve nights at sea</h3><p>Julie shared how Becky helped arrange a Norwegian fjords cruise on P&amp;O Arcadia, answered questions and made sure the details were right.</p><a class="link-arrow" href="#/reviews">See Julie's review →</a></div></article>
+          <article class="story-card static"><img src="canada-lake.jpg" alt="Canadian mountain lake" loading="lazy"><div><small>GEMMA · CANADA</small><h3>A Canadian adventure</h3><p>Gemma described Becky as an absolute superstar for putting together a memorable trip with her budget and wishes in mind.</p><a class="link-arrow" href="#/reviews">See Gemma's review →</a></div></article>
+        </div>
+      </div></section>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="page" data-page="reviews" hidden>
+      <div class="page-banner"><div class="container"><span class="eyebrow">Kind words</span><h1>Happy holidays.<br><em>Happy travellers.</em></h1><p>Real feedback from clients who put their holidays in Becky's hands. First names only, always.</p></div></div>
+      <section class="section"><div class="container"><div class="three-cols reviews-grid">
+        <article class="review-card"><span class="stars">✦ KIND WORDS</span><blockquote>“Becky was an absolute superstar!”</blockquote><p>Becky listened to Gemma's plans, worked with Canadian Affair and brought together an exciting Canada trip within their budget.</p><strong>Gemma</strong><small>Canada</small></article>
+        <article class="review-card"><span class="stars">✦ KIND WORDS</span><blockquote>“We had a fabulous time and everything went according to plan.”</blockquote><p>Julie appreciated the time Becky took to answer questions and help plan her Norwegian fjords cruise.</p><strong>Julie</strong><small>Norwegian fjords</small></article>
+        <article class="review-card"><span class="stars">✦ KIND WORDS</span><blockquote>“Becky is absolutely amazing.”</blockquote><p>Catherine praised Becky's help in planning her summer trip to Canada.</p><strong>Catherine</strong><small>Canada</small></article>
+        <article class="review-card"><span class="stars">✦ KIND WORDS</span><blockquote>“Great communication throughout and easy booking.”</blockquote><p>Sarah enjoyed her nine-night all-inclusive stay at Jaz Makadi Star in Hurghada, Egypt.</p><strong>Sarah</strong><small>Egypt</small></article>
+        <article class="review-card"><span class="stars">✦ KIND WORDS</span><blockquote>“Oh Becky you did good!!!!!!!”</blockquote><p>An excited message from Nicola as she enjoyed her holiday.</p><strong>Nicola</strong><small>Gran Canaria</small></article>
+        <article class="review-card"><span class="stars">✦ KIND WORDS</span><blockquote>“The beach was beautiful.”</blockquote><p>Lizzie loved the sea, hotel facilities and relaxing atmosphere in Palma Nova.</p><strong>Lizzie</strong><small>Palma Nova</small></article>
+      </div></div></section>
+      <section class="section pale"><div class="container split">
+        <div><span class="eyebrow">Sharing the love</span><h2>Your stories make <em>my day.</em></h2><p>Want to share your experience with Glow &amp; Go? Fill out this short form and we'll prepare an email for you to send directly to Becky. Reviews are only added to the site after approval.</p><img class="rounded-feature small-feature" src="dolphins-sunset.jpg" alt="Two dolphins at sunset" loading="lazy"></div>
+        <div class="form-card"><h3>Leave a review</h3><form class="review-form">
+          <label>First name <input name="name" required placeholder="First name only"></label>
+          <label>Your email (not published) <input type="email" name="email" required placeholder="you@example.com"></label>
+          <label>Destination <input name="destination" placeholder="Where did you travel?"></label>
+          <label>Rating <select name="rating" required><option value="">Choose a rating</option><option value="5">5 stars</option><option value="4">4 stars</option><option value="3">3 stars</option><option value="2">2 stars</option><option value="1">1 star</option></select></label>
+          <label>Your review <textarea name="message" rows="5" required minlength="10" placeholder="Tell us about your trip..."></textarea></label>
+          <label class="check"><input type="checkbox" required> I agree to Becky receiving this review and contacting me about whether it may be published.</label>
+          <button type="submit" class="btn btn-primary">Prepare my review ↗</button><p class="form-status" aria-live="polite"></p><p class="form-help">Your email app will open. You must press Send. Nothing publishes automatically.</p>
+        </form><p class="small-link">Or <a href="https://www.facebook.com/glowandgotraveluk" target="_blank" rel="noopener noreferrer">visit Glow &amp; Go on Facebook ↗</a></p></div>
+      </div></section>
+    </section>
+
+    <!-- BOOK -->
+    <section class="page" data-page="book" hidden>
+      <div class="page-banner"><div class="container"><span class="eyebrow">Let's get away</span><h1>Where to <em>next?</em></h1><p>Tell me a little about your dream holiday. I'll help you explore the possibilities.</p></div></div>
+      <section class="section pale"><div class="container split align-start"><div><span class="eyebrow">A little hello from Becky</span><h2>Let's make your escape <em>something special.</em></h2><p>From family holidays and honeymoon escapes to cruises and bespoke adventures, I'd love to hear your ideas. The form opens a ready-to-send message in your email app — no separate booking website.</p><div class="contact-panel"><p>Prefer to speak directly?</p><a href="tel:+447950010060">07950 010060</a><a href="mailto:becky@glowandgotravel.co.uk">becky@glowandgotravel.co.uk</a></div><img class="rounded-feature small-feature" src="becky-sunset.jpg" alt="Becky enjoying the sunset" loading="lazy"></div>
+      <div class="form-card"><h3>Start your holiday enquiry</h3><form class="enquiry-form"><div class="form-grid">
+        <label>Your name <input name="name" required autocomplete="name" placeholder="Your name"></label>
+        <label>Your email <input name="email" type="email" required autocomplete="email" placeholder="you@example.com"></label>
+        <label>Where would you like to go? <input name="destination" required placeholder="Your dream destination"></label>
+        <label>When would you like to travel? <input name="dates" placeholder="Dates or flexible"></label>
+        <label>Who's travelling? <input name="travellers" placeholder="Adults, children, ages if relevant"></label>
+        <label>Approximate budget <input name="budget" placeholder="Optional"></label>
+        <label class="wide">Anything else? <textarea name="message" rows="4" placeholder="Your ideas, priorities or questions..."></textarea></label>
+      </div><button class="btn btn-primary" type="submit">Prepare my email ↗</button><p class="form-status" aria-live="polite"></p><p class="form-help">Please press Send in your email app. Sending an enquiry does not confirm a holiday booking.</p></form></div></div></section>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="page" data-page="contact" hidden>
+      <div class="page-banner"><div class="container"><span class="eyebrow">Say hello</span><h1>Let's talk <em>travel.</em></h1><p>Have a destination in mind, a question to ask or just want to explore some ideas? Get in touch.</p></div></div>
+      <section class="section"><div class="container split align-start"><div class="contact-box"><span class="eyebrow">Here for you</span><h2>Find your next <em>happy place.</em></h2><a href="mailto:becky@glowandgotravel.co.uk">✉ becky@glowandgotravel.co.uk</a><a href="tel:+447950010060">☎ 07950 010060</a><p>Based in Kettering · Helping clients across the UK</p><div class="social-links"><a href="https://www.instagram.com/glowandgotraveluk/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.facebook.com/glowandgotraveluk" target="_blank" rel="noopener noreferrer">Facebook ↗</a></div></div>
+      <div class="form-card"><span class="eyebrow">Stay in the loop</span><h3>Join Becky's travel list</h3><p>Want occasional travel inspiration and news from Becky? Leave your email address and Becky will receive a request to add you to her list.</p>
+        <form class="newsletter-form"><input type="hidden" name="_subject" value="New Glow & Go mailing list request"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_template" value="table"><input type="hidden" name="request" value="Please add me to the Glow & Go mailing list.">
+          <label>Your email address <input type="email" name="email" required autocomplete="email" placeholder="you@example.com"></label>
+          <label class="check"><input type="checkbox" required> I agree to Becky contacting me with travel news and marketing emails. I understand I can unsubscribe at any time.</label>
+          <button class="btn btn-primary" type="submit">Join the mailing list ↗</button><p class="form-status" aria-live="polite"></p>
+          <p class="form-help">This uses a third-party form forwarding service. Becky must activate it once using an email confirmation before requests will arrive. Your request does not automatically subscribe you to a newsletter platform.</p>
+        </form>
+      </div></div></section>
+    </section>
+
+    <!-- PRIVACY -->
+    <section class="page" data-page="privacy" hidden>
+      <div class="page-banner"><div class="container"><span class="eyebrow">Website information</span><h1>Privacy <em>information.</em></h1><p>This is a draft for Becky and her business to review before publication.</p></div></div>
+      <section class="section"><div class="container narrow prose"><h2>How website enquiries work</h2><p>Holiday enquiries and review submissions open an email draft on your device, which you can review and send to Becky. No website database stores those form entries. Once sent, the information is handled through your email provider and Becky's inbox.</p><h2>Mailing-list requests</h2><p>If you choose to join Becky's mailing list, your email address and consent request are forwarded through FormSubmit, a third-party service, to Becky. Becky will need to handle requests, unsubscribes and any marketing messages appropriately.</p><h2>External links</h2><p>Links to Instagram, Facebook and other websites are subject to their own privacy terms.</p><p><strong>Before going live:</strong> Becky and Azure Travel should review and replace this working draft with a complete, accurate privacy notice covering the responsible business, lawful bases, processors, retention and your rights. Do not treat this as final legal advice.</p><a class="btn btn-outline" href="#/contact">Contact Becky ↗</a></div></section>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid">
+    <div><a class="brand brand-light" href="#/home"><span class="brand-icon">g<span>✦</span></span><span><strong>Glow &amp; Go</strong><small>TRAVEL BY BECKY</small></span></a><p>Escape Ordinary. Embrace Freedom.<br>A personal way to plan something wonderful.</p></div>
+    <div><h3>Discover</h3><a href="#/about">Meet Becky</a><a href="#/why-book">Why book with me?</a><a href="#/destinations">Gallery</a><a href="#/journal">Becky's travel journal</a></div>
+    <div><h3>Explore</h3><a href="#/stories">Client stories</a><a href="#/reviews">Reviews</a><a href="#/book">Holiday enquiry</a><a href="#/privacy">Privacy information</a></div>
+    <div><h3>Get in touch</h3><a href="tel:+447950010060">07950 010060</a><a href="mailto:becky@glowandgotravel.co.uk">Email Becky</a><a href="https://www.instagram.com/glowandgotraveluk/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.facebook.com/glowandgotraveluk" target="_blank" rel="noopener noreferrer">Facebook ↗</a></div>
+  </div><div class="container footer-bottom"><span>© <span id="year"></span> Glow &amp; Go Travel. Based in Kettering, UK.</span><span>Independent travel planning with the backing of Azure Travel. Booking terms and applicable financial protection are confirmed for each holiday.</span></div></footer>
+  <a class="sticky-cta" href="#/book">Plan my escape ↗</a>
+  <dialog id="image-dialog" class="lightbox" aria-label="Travel photo viewer"><div class="lightbox-body"><button class="lightbox-close" type="button" aria-label="Close photo">×</button><img alt=""><p class="lightbox-caption"></p></div></dialog>
 </body>
 </html>
