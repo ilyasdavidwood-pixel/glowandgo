@@ -1,12 +1,11 @@
 
-/* glow & go travel — Version 2 */
-/* All images live beside index.html in the main GitHub folder. */
+/* glow & go travel — complete website JavaScript */
+/* All pictures are in the same folder as index.html */
 
 (() => {
   'use strict';
 
-  // WEBSITE NAVIGATION
-
+  // PAGE NAVIGATION
   const routes = new Set([
     'home',
     'about',
@@ -91,30 +90,21 @@
   });
 
   window.addEventListener('hashchange', showPage);
-
   showPage();
 
   document.getElementById('year').textContent =
     new Date().getFullYear();
 
   // MOBILE BOOKING BUTTON
-
   const setSticky = () => {
-    sticky.classList.toggle(
-      'visible',
-      window.scrollY > 450
-    );
+    sticky.classList.toggle('visible', window.scrollY > 450);
   };
 
-  window.addEventListener('scroll', setSticky, {
-    passive: true
-  });
-
+  window.addEventListener('scroll', setSticky, { passive: true });
   setSticky();
 
   // CUSTOMER REVIEW SLIDER
   // First names only.
-
   const reviews = [
     {
       text: '“Becky was an absolute superstar!”',
@@ -173,8 +163,6 @@
   );
 
   // PHOTO GALLERY FILTERS
-  // Becky's Moments contains six photos that include Becky.
-
   document.querySelectorAll('[data-filter]').forEach(button => {
     button.addEventListener('click', () => {
       const filter = button.dataset.filter;
@@ -196,10 +184,8 @@
     });
   });
 
-  // FULL SCREEN PHOTO VIEWER
-  // Images are in the GitHub root folder.
-  // No assets/ prefix is needed.
-
+  // FULL-SCREEN PHOTO VIEWER
+  // Image filenames match the GitHub root folder.
   const allowedPhotos = new Set([
     'beach-cove.jpg',
     'beach-just-booked.jpg',
@@ -245,7 +231,6 @@
       if (!allowedPhotos.has(filename)) return;
 
       dialogImage.src = filename;
-
       dialogImage.alt =
         button.dataset.caption || 'Holiday photograph';
 
@@ -258,9 +243,10 @@
     });
   });
 
-  dialog
-    .querySelector('.lightbox-close')
-    .addEventListener('click', () => dialog.close());
+  dialog.querySelector('.lightbox-close').addEventListener(
+    'click',
+    () => dialog.close()
+  );
 
   dialog.addEventListener('click', event => {
     if (event.target === dialog) dialog.close();
@@ -270,9 +256,8 @@
     dialogImage.removeAttribute('src');
   });
 
-  // HOLIDAY ENQUIRY FORMS
-  // Creates an email that the visitor must send.
-
+  // HOLIDAY ENQUIRY
+  // Prepares an email for visitors to send.
   const beckyEmail = 'becky@glowandgotravel.co.uk';
 
   const clean = value =>
@@ -324,8 +309,6 @@
   });
 
   // CUSTOMER REVIEW FORM
-  // Prepares a review email to Becky for approval.
-
   document.querySelectorAll('.review-form').forEach(form => {
     form.addEventListener('submit', event => {
       event.preventDefault();
@@ -359,9 +342,8 @@
   });
 
   // MAILING LIST
-  // Forwards an email request to Becky using FormSubmit.
-  // Becky must activate FormSubmit through its confirmation email.
-
+  // Sends a signup request through FormSubmit.
+  // Becky must activate the forwarding email first.
   document.querySelectorAll('.newsletter-form').forEach(form => {
     form.addEventListener('submit', async event => {
       event.preventDefault();
@@ -372,7 +354,6 @@
       const submit = form.querySelector('[type="submit"]');
 
       submit.disabled = true;
-
       status.textContent = 'Sending your request…';
       status.classList.add('visible');
 
@@ -410,5 +391,4 @@
       }
     });
   });
-
 })();
